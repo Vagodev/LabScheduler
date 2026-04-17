@@ -1,0 +1,1 @@
+ALTER TABLE `bookings` MODIFY COLUMN `bookingDate` varchar(10) NOT NULL;
