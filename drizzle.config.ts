@@ -1,15 +1,19 @@
 import { defineConfig } from "drizzle-kit";
 
-const connectionString = process.env.DATABASE_URL;
-if (!connectionString) {
-  throw new Error("DATABASE_URL is required to run drizzle commands");
-}
-
+// Extraímos os dados da string de conexão para evitar erros de caractere no Windows
 export default defineConfig({
   schema: "./drizzle/schema.ts",
   out: "./drizzle",
   dialect: "mysql",
   dbCredentials: {
-    url: connectionString,
+    host: "gateway01.ap-southeast-1.prod.alicloud.tidbcloud.com",
+    port: 4000,
+    user: "3P3YNZ8RiAzhgqe.root",
+    password: "iWUBjRznsNma2J6j",
+    database: "labscheduler", // Nome do banco que você criou no DBeaver
+    ssl: {
+      minVersion: 'TLSv1.2',
+      rejectUnauthorized: true,
+    },
   },
 });
