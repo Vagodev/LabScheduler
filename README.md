@@ -4,7 +4,7 @@
 **Versão:** Projeto Local (autenticação e-mail/senha)  
 **Data:** Abril de 2026  
 **Documento:** Guia Técnico de Implantação Local
-
+**Projeto para fins de estudo**
 ---
 
 ## 1. Visão Geral
@@ -300,5 +300,6 @@ Embora o Projeto Local seja destinado a uso interno, algumas práticas de segura
 | Executar testes | `pnpm test` |
 
 ---
-*Documento gerado em Abril de 2026 — LabScheduler Projeto Local*
+https://labscheduler.onrender.com/
+<img width="1812" height="886" alt="image" src="https://github.com/user-attachments/assets/6265f93f-53ab-46fa-9994-a0f9413d6b29" />
 
